@@ -51,17 +51,17 @@ bool toggleLED = 0;
 bool myStatus = 0;
 signed int bright = 0;
 
-void DisplayVal(int val) { 
-    char valStr[10]; 
-    char *str;
+// void DisplayVal(int val) { 
+//     char valStr[10]; 
+//     char *str;
 
-    sprintf(valStr, "%d", val); 
-    str = valStr; 
+//     sprintf(valStr, "%d", val); 
+//     str = valStr; 
     
-    while (*str) 
-        EUSART_Write(*str++); 
+//     while (*str) 
+//         EUSART_Write(*str++); 
     
-}
+// }
 
 void main(void)
 {
@@ -110,7 +110,7 @@ void main(void)
             }
         }
         
-        DisplayVal(data);
+        // DisplayVal(data);
 
     }
 }
